@@ -3,8 +3,8 @@ cloud:
     s3: #버킷이름
       bucket: jeongwoon-test
     credentials:
-      access-key: AKIASVMKEH77RQ3VK6XZ
-      secret-key: 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
+      access-key: 
+      secret-key: 
     region: #S3 지역
       static: ap-northeast-2
     stack:
