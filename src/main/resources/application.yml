@@ -1,0 +1,37 @@
+cloud:
+  aws:
+    s3: #버킷이름
+      bucket: jeongwoon-test
+    credentials:
+      access-key: AKIASVMKEH77RQ3VK6XZ
+      secret-key: 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
+    region: #S3 지역
+      static: ap-northeast-2
+    stack:
+      auto: false
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?user=root
+    username: root
+    password: Wjddns8509!
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      format_sql: true
+      ddl-auto: create
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
